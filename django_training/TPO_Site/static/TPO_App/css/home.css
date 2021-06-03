@@ -1,0 +1,184 @@
+html{
+  scroll-behavior: smooth;
+}
+*{margin: 0;padding: 0;box-sizing: border-box;}
+
+.bgimg{
+  /* background-image: url; */
+  background:linear-gradient(rgba(0,168,255,0.3),rgba(0,168,255,0.3)), url("static/TPO_App/images/home2.jpg") no-repeat center fixed;
+  background-size: 100% 80%;
+  background-attachment: fixed;
+  width: 100%;
+  height: 600px;
+  clip-path:polygon(100% 0%, 100% 70%, 50% 100%, 0% 75%, 0 0);
+  position: relative;
+
+}
+.headerset{
+  padding-top: 150px;
+  box-sizing: border-box;
+  font-family: 'Racing Sans One', cursive;
+}
+.bgimg::before{
+  content: "";
+  position:absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  background:linear-gradient(to right,#1e5799 0%, #3ccdbb 0%, #16c9f6 0% );
+  opacity: 0.4%;
+  z-index: -1;
+}
+/* .nav-item-a:hover{
+  color: black;
+} */
+.bgimg a:hover{
+  color: black;
+}
+.nav-item a{
+  color: #fff!important;
+  font-weight: bold;
+}
+li{
+  list-style: none;
+}
+/* preparation */
+.pricing{
+  width: 100%;
+  height: 100vh;
+  padding: 50px;
+  position: relative;
+}
+.pricing::before{
+  content: "";
+  position:absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  background:linear-gradient(160deg, #16c9f6 55%,#fff 0% );
+  /* opacity: 0.4%; */
+  z-index: -1;
+}
+.pricing h1{
+  padding-bottom: 25px;
+}
+.card{
+  transition: 0.4s ease;
+}
+.card-header{
+  font-size: 1.6rem;
+  font-weight: bold;
+  background: white !important;
+  padding: 25px !important;
+}
+.card-body{
+  padding: 30px 0px !important;
+  margin-right: 15px;
+}
+.card-footer{
+  background: white !important;
+  padding: 10px 0px !important;
+}
+.card-footer a:hover{
+  color: #fff;
+  background: #1e5799;
+  text-decoration: none;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+.card:hover{
+  transform: translateY(-20px);
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+
+}
+.card:hover .card-header{
+  color: darkcyan;
+}
+/* student feedback */
+.feedback{
+  width: 100%;
+  height: auto;
+  margin: 100px 0;
+  text-align: center;
+}*/
+.extradiv{
+  background: #fff;
+  border: 1px solid black;
+  padding: 50px !important;
+  border-radius: 3px;
+  transition: 0.3s;
+  margin-right: 20px;
+  margin-bottom: 20px;
+
+}
+.feedback p{
+  margin-top: 0px;
+  margin-bottom: 3rem;
+}
+.extradiv h2{
+  font-size: 0.9rem;
+  margin: 20px 0px 15px 0px;
+  font-weight: bold;
+  line-height: 1.1;
+  word-spacing: 4px;
+}
+.extradiv::before{
+  content: "";
+  position:absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  background:linear-gradient(180deg, #16c9f6 55%,#fff 0% );
+  /* opacity: 0.4%; */
+  z-index: -1;
+}
+.extradiv:hover{
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.3) ;
+  transform: translateY(-20px);
+}
+/* contact */
+.contact{
+  width: 100%;
+  height: 100vh;
+  padding: 50px 0;
+  position: relative;
+}
+.contact::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(330deg,#16c9f6 55%, #fff 0%);
+  z-index: -1;
+
+}
+::placeholder{
+  font-size: 0.85rem;
+}
+#mybtn{
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  z-index:99;
+  border: none;
+  color: #fff;
+  background: #00abff;
+}
+nav{
+width:100%;
+top:0%;
+position:sticky:
+border-top: 1px solid rgba(255,255,255,.2);
+border-bottom: 1px solid rgba(255,255,255,.2);
+position:sticky;
+}
+
+#navbar a:hover{
+background: #ddd;
+color:black;
+}
