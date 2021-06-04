@@ -24,6 +24,6 @@ urlpatterns = [
     path('login/',views.UserLoginView, name='user_login'),
     path('registration/', views.UserRegistrationView, name="user_registration"),
     path('logout/', views.UserLogoutView, name='user_logout'),
-    path('', include('TPO_App.urls')),
+    path('profile/', include('TPO_App.urls')),
     path('admin/', admin.site.urls),
 ]

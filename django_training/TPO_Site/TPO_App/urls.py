@@ -14,5 +14,4 @@ urlpatterns = [
     path('<str:username>/', views.UserInfoView, name="profile"),
     path('<str:username>/editinfo/', views.UserEditInfoView, name="edit_info"),
     path('accounts/login/',views.HomeView,name='home'),
-
 ]
