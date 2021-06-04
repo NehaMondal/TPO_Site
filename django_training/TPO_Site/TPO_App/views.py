@@ -88,7 +88,7 @@ def UserEditInfoView(request,username):
         info.alternate_gmail = request.POST.get("alternate_gmail")
         user.save()
         info.save()
-        return HttpResponseRedirect(reverse("user:profile",kwargs={"username":username}))
+        return HttpResponseRedirect(reverse("user:profile", kwargs={"username":username}))
     else:
         var_dict = {"user":user, "info":info}
         return render(request, "TPO_App/edit_info.html", context = var_dict)
