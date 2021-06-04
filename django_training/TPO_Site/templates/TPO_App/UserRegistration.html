@@ -21,20 +21,20 @@
                   <h1 class="">Sign Up Page</h1>
                   <br>
                   <div class="px-2">
-                      <form action="" class="justify-content-center">
+                      <form class="justify-content-center" method="POST">
                           {% csrf_token %}
                           <div class="form-group">
                             <label>Username</label>
-                            <input type="text" class="form-control" placeholder="Enter Your Name">
+                            <input type="text" name="username" class="form-control" placeholder="Enter Your Name" required>
                             <br>
                               <label>Email</label>
-                            <input type="email" class="form-control" placeholder="Enter a valid Email Address">
+                            <input type="email" name="email" class="form-control" placeholder="Enter a valid Email Address" required>
                             <br>
                             <label>Password</label>
-                            <input type="password" class="form-control" placeholder="Enter password">
+                            <input type="password" name="password" class="form-control" placeholder="Enter password" required>
                               <br>
                               <label> Confirm Password</label>
-                            <input type="password" class="form-control" placeholder="Confirm password">
+                            <input type="password" name="confirm_password" class="form-control" placeholder="Confirm password" required>
                           </div>
 
                           <button type="submit" class="btn btn-primary btn-lg">Sign Up</button>

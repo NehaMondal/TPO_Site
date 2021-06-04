@@ -34,7 +34,7 @@ def UserRegistrationView(request):
         password = request.POST.get("password")
         confirm_password = request.POST.get("confirm_password")
         if password == confirm_password:
-            user = User.objects.create(username=username, email=email, password=password)
+            user = User.objects.create_user(username=username, email=email, password=password)
             user.set_password(user.password)
             user.save()
             user_info = UserInfoModel.objects.create(user=user)
