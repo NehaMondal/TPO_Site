@@ -15,6 +15,7 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEMPLATE_DIR = os.path.join(BASE_DIR,'templates')
+MEDIA_DIR = os.path.join(BASE_DIR,'media')
 
 
 # Quick-start development settings - unsuitable for production
@@ -121,4 +122,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR,'static')]
-LOGOUT_REDIRECT_URL='logout'
+MEDIA_URL = '/media/'
+MEDIA_ROOT = MEDIA_DIR
+LOGIN_URL = '/login/'
+LOGOUT_REDIRECT_URL= '/logout/'

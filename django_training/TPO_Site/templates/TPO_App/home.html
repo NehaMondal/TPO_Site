@@ -40,9 +40,15 @@
               <li class="nav-item">
                 <a href="#interviewid" class="nav-link text-white">Preparation</a>
               </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link text-white">Student</a>
-              </li>
+              <div class="dropdown">
+                <button type="button" class="btn text-white font-weight-bold dropdown-toggle" data-toggle="dropdown">STUDENT</button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Personal Details</a>
+                    <a class="dropdown-item" href="#">Marks Details</a>
+                    <a class="dropdown-item" href="#">Training Details</a>
+                    <a class="dropdown-item" href="#">Documents</a>
+                  </div>
+              </div>
 
               <li class="nav-item">
                 <a href="#contactdetails" class="nav-link text-white">Contact Us</a>
@@ -86,19 +92,19 @@
                 <img class="bgimg"
                     src="{% static "TPO_App/images/home1.jpg" %}"
                     alt="Second slide" >
-                <div class="carousel-content">
+             <!--   <div class="carousel-content">
                   <h3>Welcome To Training and Placement Cell</h3>
                   <h2>Give The Best, Get The Best</h2>
-                </div>
+                </div> -->
             </div>
 			<div class="carousel-item active">
                 <img class="bgimg"
                     src="{% static "TPO_App/images/home2.jpg" %}"
                     alt="First slide">
-              <div class="carousel-content">
+             <!-- <div class="carousel-content">
                   <h3>Welcome To Training and Placement Cell</h3>
                   <h2>Give The Best, Get The Best</h2>
-              </div>
+              </div> -->
             </div>
         </div>
 
@@ -111,18 +117,6 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
-     <section class="header-section">
-       <div class="container text-center text-white headerset">
-         <h1>Welcome to Training and Placement cell</h1><br> <br>
-         <h3>(GIVE THE BEST,GET THE BEST)</h3>
-         <!-- <div class="header-button">
-           <a href="#">Introduction</a>
-           <a href="#">About US</a>
-           <a href="#">Placement</a>
-           <a href="#">Contact Us</a>
-
-         </div> -->
-       </div>
      </div>
      <div class="container text-center text-black intro" id="introid">
        <h2>Introduction</h2>
@@ -228,7 +222,7 @@
         <a href="#">
           <i class="fa fa-user" style='font-size:45px' aria-hidden="true"></i>
         </a>
-        <h2>helpful</h2>
+        <h2>excellent</h2>
 
 
       </div>
@@ -243,7 +237,7 @@
         <a href="#">
           <i class="fa fa-user" style='font-size:45px' aria-hidden="true"></i>
         </a>
-        <h2>helpful</h2>
+        <h2>average</h2>
 
       </div>
 

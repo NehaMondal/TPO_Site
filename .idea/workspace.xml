@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="629b68bb-a453-49a8-be2a-bfdeea5a59e8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/neha.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/neha.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_training/TPO_Site/TPO_App/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_training/TPO_Site/TPO_App/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_training/TPO_Site/TPO_Site/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_training/TPO_Site/TPO_Site/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/django_training/TPO_Site/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/django_training/TPO_Site/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/django_training/TPO_Site/static/TPO_App/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/django_training/TPO_Site/static/TPO_App/css/home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/django_training/TPO_Site/static/TPO_App/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/django_training/TPO_Site/static/TPO_App/css/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/django_training/TPO_Site/templates/TPO_App/UserLogin.html" beforeDir="false" afterPath="$PROJECT_DIR$/django_training/TPO_Site/templates/TPO_App/UserLogin.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/django_training/TPO_Site/templates/TPO_App/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/django_training/TPO_Site/templates/TPO_App/home.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,11 +40,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/django_training/TPO_Site/templates/TPO_App/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="100" column="14" selection-start-line="100" selection-start-column="14" selection-end-line="100" selection-end-column="14" />
+            <state relative-caret-position="340">
+              <caret line="48" column="63" selection-start-line="48" selection-start-column="63" selection-end-line="48" selection-end-column="63" />
+              <folding>
+                <element signature="n#style#0;n#i#0;n#a#0;n#div#1;n#div#0;n#div#1;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -75,11 +75,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/django_training/TPO_Site/static/TPO_App/css/home.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="533">
-              <caret line="193" column="12" selection-start-line="193" selection-start-column="12" selection-end-line="193" selection-end-column="12" />
+            <state relative-caret-position="618">
+              <caret line="202" column="2" selection-start-line="202" selection-start-column="2" selection-end-line="202" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -99,11 +99,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/django_training/TPO_Site/TPO_App/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="40" column="22" lean-forward="true" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+            <state relative-caret-position="544">
+              <caret line="32" column="38" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/django_training/TPO_Site/TPO_Site/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -128,8 +137,10 @@
         <option value="$PROJECT_DIR$/django_training/TPO_Site/TPO_App/urls.py" />
         <option value="$PROJECT_DIR$/django_training/TPO_Site/templates/TPO_App/UserLogin.html" />
         <option value="$PROJECT_DIR$/django_training/TPO_Site/static/TPO_App/css/login.css" />
-        <option value="$PROJECT_DIR$/django_training/TPO_Site/templates/TPO_App/home.html" />
         <option value="$PROJECT_DIR$/django_training/TPO_Site/static/TPO_App/css/home.css" />
+        <option value="$PROJECT_DIR$/django_training/TPO_Site/TPO_App/models.py" />
+        <option value="$PROJECT_DIR$/django_training/TPO_Site/TPO_Site/settings.py" />
+        <option value="$PROJECT_DIR$/django_training/TPO_Site/templates/TPO_App/home.html" />
       </list>
     </option>
   </component>
@@ -167,46 +178,7 @@
               <item name="neha" type="462c0819:PsiDirectoryNode" />
               <item name="django_training" type="462c0819:PsiDirectoryNode" />
               <item name="TPO_Site" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="neha" type="b2602c69:ProjectViewProjectNode" />
-              <item name="neha" type="462c0819:PsiDirectoryNode" />
-              <item name="django_training" type="462c0819:PsiDirectoryNode" />
               <item name="TPO_Site" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="TPO_App" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="neha" type="b2602c69:ProjectViewProjectNode" />
-              <item name="neha" type="462c0819:PsiDirectoryNode" />
-              <item name="django_training" type="462c0819:PsiDirectoryNode" />
-              <item name="TPO_Site" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="TPO_App" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="neha" type="b2602c69:ProjectViewProjectNode" />
-              <item name="neha" type="462c0819:PsiDirectoryNode" />
-              <item name="django_training" type="462c0819:PsiDirectoryNode" />
-              <item name="TPO_Site" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="neha" type="b2602c69:ProjectViewProjectNode" />
-              <item name="neha" type="462c0819:PsiDirectoryNode" />
-              <item name="django_training" type="462c0819:PsiDirectoryNode" />
-              <item name="TPO_Site" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="TPO_App" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="neha" type="b2602c69:ProjectViewProjectNode" />
-              <item name="neha" type="462c0819:PsiDirectoryNode" />
-              <item name="django_training" type="462c0819:PsiDirectoryNode" />
-              <item name="TPO_Site" type="462c0819:PsiDirectoryNode" />
-              <item name="TPO_App" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -260,7 +232,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.18627451" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.37254903" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -276,16 +248,6 @@
           <caret line="73" column="44" lean-forward="true" selection-start-line="73" selection-start-column="44" selection-end-line="73" selection-end-column="44" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_training/TPO_Site/TPO_App/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="40" column="22" lean-forward="true" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -327,17 +289,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django_training/TPO_Site/templates/TPO_App/home.html">
+    <entry file="file://$PROJECT_DIR$/django_training/TPO_Site/static/TPO_App/css/home.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="100" column="14" selection-start-line="100" selection-start-column="14" selection-end-line="100" selection-end-column="14" />
+        <state relative-caret-position="618">
+          <caret line="202" column="2" selection-start-line="202" selection-start-column="2" selection-end-line="202" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django_training/TPO_Site/static/TPO_App/css/home.css">
+    <entry file="file://$PROJECT_DIR$/django_training/TPO_Site/TPO_App/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="193" column="12" selection-start-line="193" selection-start-column="12" selection-end-line="193" selection-end-column="12" />
+        <state relative-caret-position="544">
+          <caret line="32" column="38" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_training/TPO_Site/TPO_Site/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_training/TPO_Site/templates/TPO_App/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="48" column="63" selection-start-line="48" selection-start-column="63" selection-end-line="48" selection-end-column="63" />
+          <folding>
+            <element signature="n#style#0;n#i#0;n#a#0;n#div#1;n#div#0;n#div#1;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

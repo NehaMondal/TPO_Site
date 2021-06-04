@@ -183,9 +183,10 @@ background: #ddd;
 color:black;
 }
 
+/*
 .carousel-content {
 position: absolute;
-bottom: 8rem;
+top: 1rem;
 width:100%;
 z-index: 3;
 opacity: 0;
@@ -199,3 +200,4 @@ display: table-cell;
 vertical-align: middle;
 text-align:center;
 }
+*/
