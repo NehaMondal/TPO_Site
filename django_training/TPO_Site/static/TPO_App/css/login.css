@@ -1,4 +1,4 @@
-{% load staticfiles %}
+{% load static %}
 #cover-caption {
     width: 100%;
     position: relative;
