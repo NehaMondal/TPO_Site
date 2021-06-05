@@ -88,9 +88,9 @@ def UserEditInfoView(request,username):
         info.alternate_gmail = request.POST.get("alternate_gmail")
         user.save()
         info.save()
-        return HttpResponseRedirect(reverse("marks_details"))
+        return HttpResponseRedirect(reverse("TPO_App:marks_details.html"))
     else:
-        return render(request.META['HTTP_REFERER'])
+        return render(request,"TPO_App/edit_info.html")
 
 @login_required()
 def UserMarksView(request,username):
@@ -113,9 +113,9 @@ def UserMarksView(request,username):
         agg = UserMarksModel.objects.create(tenth_obt_marks=tenth_obt_marks, tenth_total_marks=tenth_total_marks, twelve_obt_marks = twelve_obt_marks, twelve_total_marks=twelve_total_marks, jee_rank=jee_rank, first_sem_marks=first_sem_marks, second_sem_marks=second_sem_marks, third_sem_marks=third_sem_marks, fourth_sem_marks=fourth_sem_marks, fifth_sem_marks=fifth_sem_marks, sixth_sem_marks=sixth_sem_marks, seventh_sem_marks=seventh_sem_marks, aggregates=aggregates,supplees=supplees)
         agg.save()
         user.save()
-        return HttpResponseRedirect(reverse("user:training_details"))
+        return HttpResponseRedirect(reverse("TPO_App:training_details"))
     else:
-        return render(request.META['HTTP_REFERER'])
+        return render(request,"TPO_App/marks_details.html")
 
 
 @login_required()
@@ -132,9 +132,9 @@ def TrainingDetailsView(request,username):
         train_detail = TrainingInfoModel.objects.create(technology=technology, project =project , training_mode=training_mode, institute_name=institute_name,institute_address=institute_address, institute_number=institute_number,training_duration=training_duration)
         train_detail.save()
         user.save()
-        return HttpResponseRedirect(reverse("user:documents_detail"))
+        return HttpResponseRedirect(reverse("TPO_App:documents_detail"))
     else:
-        return render(request.META['HTTP_REFERER'])
+        return render(request,"TPO_App:training_details")
 
 
 @login_required()
@@ -164,7 +164,7 @@ def DocumentsView(request,username):
         user.save()
         return HttpResponseRedirect(reverse("home"))
     else:
-        return render(request.META['HTTP_REFERER'])
+        return render(request,"TPO_App/documents_detail.html")
 
 
 
