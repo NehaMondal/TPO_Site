@@ -27,7 +27,7 @@ SECRET_KEY = 'uvzvv@u!3d^6vjosc#aoj5+c636w&u^%3$t8$q+6jvb57bz*g&'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://green-termite-69.loca.lt','127.0.0.1']
 
 
 # Application definition

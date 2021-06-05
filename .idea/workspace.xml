@@ -3,8 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="629b68bb-a453-49a8-be2a-bfdeea5a59e8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_training/TPO_Site/TPO_App/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_training/TPO_Site/TPO_App/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/django_training/TPO_Site/TPO_App/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_training/TPO_Site/TPO_App/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_training/TPO_Site/TPO_App/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_training/TPO_Site/TPO_App/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_training/TPO_Site/TPO_Site/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_training/TPO_Site/TPO_Site/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/django_training/TPO_Site/TPO_Site/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_training/TPO_Site/TPO_Site/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_training/TPO_Site/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/django_training/TPO_Site/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_training/TPO_Site/templates/TPO_App/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/django_training/TPO_Site/templates/TPO_App/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_training/TPO_Site/templates/TPO_App/logout.html" beforeDir="false" afterPath="$PROJECT_DIR$/django_training/TPO_Site/templates/TPO_App/logout.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,16 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/django_training/TPO_Site/TPO_App/tests.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/django_training/TPO_Site/TPO_App/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="55" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
+            <state relative-caret-position="306">
+              <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
               </folding>
@@ -32,28 +33,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/django_training/TPO_Site/templates/TPO_App/logout.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/django_training/TPO_Site/TPO_Site/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/django_training/TPO_Site/templates/TPO_App/edit_info.html">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/django_training/TPO_Site/TPO_App/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="38" column="23" lean-forward="true" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
+            <state relative-caret-position="629">
+              <caret line="146" column="58" lean-forward="true" selection-start-line="146" selection-start-column="58" selection-end-line="146" selection-end-column="58" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -62,34 +50,45 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/django_training/TPO_Site/templates/TPO_App/documents_detail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/django_training/TPO_Site/templates/TPO_App/training_details.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/django_training/TPO_Site/templates/TPO_App/marks_details.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/django_training/TPO_Site/templates/TPO_App/profile.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/django_training/TPO_Site/TPO_App/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
+            <state relative-caret-position="357">
+              <caret line="57" column="57" selection-start-line="57" selection-start-column="57" selection-end-line="57" selection-end-column="57" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/django_training/TPO_Site/TPO_App/admin.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/django_training/TPO_Site/templates/TPO_App/UserRegistration.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="50" lean-forward="true" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -103,7 +102,7 @@
         <entry file="file://$PROJECT_DIR$/django_training/TPO_Site/static/TPO_App/css/login.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1190">
-              <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+              <caret line="70" selection-start-line="70" selection-end-line="70" />
             </state>
           </provider>
         </entry>
@@ -126,16 +125,19 @@
         <option value="$PROJECT_DIR$/django_training/TPO_Site/templates/TPO_App/training.html" />
         <option value="$PROJECT_DIR$/django_training/TPO_Site/static/TPO_App/css/login.css" />
         <option value="$PROJECT_DIR$/django_training/TPO_Site/static/TPO_App/css/home.css" />
-        <option value="$PROJECT_DIR$/django_training/TPO_Site/templates/TPO_App/home.html" />
-        <option value="$PROJECT_DIR$/django_training/TPO_Site/TPO_Site/settings.py" />
         <option value="$PROJECT_DIR$/django_training/TPO_Site/TPO_App/admin.py" />
         <option value="$PROJECT_DIR$/django_training/TPO_Site/TPO_App/forms.py" />
         <option value="$PROJECT_DIR$/django_training/TPO_Site/templates/TPO_App/UserRegistration.html" />
-        <option value="$PROJECT_DIR$/django_training/TPO_Site/templates/TPO_App/UserLogin.html" />
-        <option value="$PROJECT_DIR$/django_training/TPO_Site/TPO_App/models.py" />
-        <option value="$PROJECT_DIR$/django_training/TPO_Site/TPO_App/views.py" />
+        <option value="$PROJECT_DIR$/django_training/TPO_Site/TPO_Site/settings.py" />
         <option value="$PROJECT_DIR$/django_training/TPO_Site/templates/TPO_App/logout.html" />
         <option value="$PROJECT_DIR$/django_training/TPO_Site/TPO_Site/urls.py" />
+        <option value="$PROJECT_DIR$/django_training/TPO_Site/templates/TPO_App/home.html" />
+        <option value="$PROJECT_DIR$/django_training/TPO_Site/templates/TPO_App/UserLogin.html" />
+        <option value="$PROJECT_DIR$/django_training/TPO_Site/templates/TPO_App/marks_details.html" />
+        <option value="$PROJECT_DIR$/django_training/TPO_Site/templates/TPO_App/training_details.html" />
+        <option value="$PROJECT_DIR$/django_training/TPO_Site/templates/TPO_App/documents_detail.html" />
+        <option value="$PROJECT_DIR$/django_training/TPO_Site/TPO_App/models.py" />
+        <option value="$PROJECT_DIR$/django_training/TPO_Site/TPO_App/views.py" />
         <option value="$PROJECT_DIR$/django_training/TPO_Site/TPO_App/urls.py" />
       </list>
     </option>
@@ -267,7 +269,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32913166" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -294,107 +296,145 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django_training/TPO_Site/TPO_Site/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="127" selection-start-line="127" selection-end-line="127" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/django_training/TPO_Site/TPO_App/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_training/TPO_Site/TPO_App/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_training/TPO_Site/templates/TPO_App/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="328" column="16" lean-forward="true" selection-start-line="328" selection-start-column="16" selection-end-line="328" selection-end-column="16" />
-          <folding>
-            <element signature="n#style#0;n#i#0;n#a#0;n#div#1;n#div#0;n#div#1;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_training/TPO_Site/templates/TPO_App/UserLogin.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/django_training/TPO_Site/TPO_App/tests.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/django_training/TPO_Site/templates/TPO_App/logout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_training/TPO_Site/TPO_App/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="23" lean-forward="true" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_training/TPO_Site/TPO_App/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/django_training/TPO_Site/TPO_App/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django_training/TPO_Site/templates/TPO_App/UserRegistration.html">
+    <entry file="file://$PROJECT_DIR$/django_training/TPO_Site/TPO_Site/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="50" lean-forward="true" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django_training/TPO_Site/static/TPO_App/css/login.css">
+    <entry file="file://$PROJECT_DIR$/django_training/TPO_Site/templates/TPO_App/UserRegistration.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1190">
-          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+        <state relative-caret-position="765">
+          <caret line="45" column="12" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_training/TPO_Site/templates/TPO_App/UserLogin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_training/TPO_Site/templates/TPO_App/logout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="87" selection-start-line="28" selection-start-column="87" selection-end-line="28" selection-end-column="87" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/django_training/TPO_Site/TPO_Site/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+        <state relative-caret-position="340">
+          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+          <folding>
+            <element signature="e#632#664#0" expanded="true" />
+          </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_training/TPO_Site/TPO_App/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_training/TPO_Site/templates/TPO_App/training_details" />
+    <entry file="file://$PROJECT_DIR$/django_training/TPO_Site/templates/TPO_App/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+          <folding>
+            <element signature="n#style#0;n#i#0;n#a#0;n#div#1;n#div#0;n#div#1;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_training/TPO_Site/templates/TPO_App/documents_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_training/TPO_Site/templates/TPO_App/training_details.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_training/TPO_Site/templates/TPO_App/marks_details.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_training/TPO_Site/templates/TPO_App/profile.html">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/django_training/TPO_Site/TPO_App/apps.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/django_training/TPO_Site/static/TPO_App/css/login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1190">
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_training/TPO_Site/TPO_App/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="57" column="57" selection-start-line="57" selection-start-column="57" selection-end-line="57" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_training/TPO_Site/TPO_App/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="146" column="58" lean-forward="true" selection-start-line="146" selection-start-column="58" selection-end-line="146" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_training/TPO_Site/templates/TPO_App/edit_info.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/django_training/TPO_Site/TPO_App/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="55" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
+        <state relative-caret-position="306">
+          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
           <folding>
             <element signature="e#0#36#0" expanded="true" />
           </folding>

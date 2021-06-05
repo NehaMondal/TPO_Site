@@ -13,5 +13,7 @@ urlpatterns = [
     path('logout/', views.UserLogoutView, name='user_logout'),
     path('<str:username>/', views.UserInfoView, name="profile"),
     path('<str:username>/editinfo/', views.UserEditInfoView, name="edit_info"),
-    path('accounts/login/',views.HomeView,name='home'),
-]
+    path('<str:username>/marksdetails/', views.UserMarksView, name="marks_details"),
+    path('<str:username>/trainingdetails/', views.TrainingDetailsView, name="training_details"),
+    path('<str:username>/documentsdetail/', views.DocumentsView, name="documents_detail"),
+]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

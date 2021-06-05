@@ -40,6 +40,19 @@
               <li class="nav-item">
                 <a href="#interviewid" class="nav-link text-white">Preparation</a>
               </li>
+
+
+              <li class="nav-item">
+                <a href="#contactdetails" class="nav-link text-white">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a href="#studentreview" class="nav-link text-white">Students Feedback</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="{% url 'TPO_App:user_registration' %}" class="nav-link text-white">Sign Up</a>
+              </li>
+                {% if user.is_authenticated %}
               <div class="dropdown">
                 <button type="button" class="btn text-white font-weight-bold dropdown-toggle" data-toggle="dropdown">STUDENT</button>
                   <div class="dropdown-menu">
@@ -49,23 +62,12 @@
                     <a class="dropdown-item" href="#">Documents</a>
                   </div>
               </div>
-
-              <li class="nav-item">
-                <a href="#contactdetails" class="nav-link text-white">Contact Us</a>
-              </li>
-              <li class="nav-item">
-                <a href="#studentreview" class="nav-link text-white">Students Feedback</a>
-              </li>
               <div class="dropdown">
                 <button type="button" class="btn text-white font-weight-bold dropdown-toggle" data-toggle="dropdown">PLACEMENT</button>
                   <div class="dropdown-menu">
                     <a class="dropdown-item" href="#">Notification</a>
                   </div>
                 </div>
-              <li class="nav-item">
-                <a href="{% url 'TPO_App:user_registration' %}" class="nav-link text-white">Sign Up</a>
-              </li>
-                {% if user.is_authenticated %}
                 <li class="nav-item">
                 <a href="{% url 'TPO_App:user_logout' %}" class="nav-link text-white">Log Out</a>
                 </li>

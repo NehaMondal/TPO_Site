@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseRedirect
 from TPO_App.forms import UserLoginModelForm, UserRegistrationModelForm, UserInfoModelForm
-from TPO_App.models import UserInfoModel
+from TPO_App.models import UserInfoModel, UserMarksModel, DocumentsModel, TrainingInfoModel
 from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
@@ -88,10 +88,86 @@ def UserEditInfoView(request,username):
         info.alternate_gmail = request.POST.get("alternate_gmail")
         user.save()
         info.save()
-        return HttpResponseRedirect(reverse("user:profile", kwargs={"username":username}))
+        return HttpResponseRedirect(reverse("user:marks_details"))
     else:
-        var_dict = {"user":user, "info":info}
-        return render(request, "TPO_App/edit_info.html", context = var_dict)
+        return render(request.META['HTTP_REFERER'])
+
+@login_required()
+def UserMarksView(request,username):
+    user = User.objects.get(username=username)
+    if request.method=="POST":
+        tenth_obt_marks = request.POST.get("tenth_obt_marks")
+        tenth_total_marks = request.POST.get("tenth_total_marks")
+        twelve_obt_marks = request.POST.get("twelve_obt_marks")
+        twelve_total_marks = request.POST.get("twelve_total_marks")
+        jee_rank = request.POST.get("jee_rank")
+        first_sem_marks = request.POST.get("first_sem_marks")
+        second_sem_marks = request.POST.get("second_sem_marks")
+        third_sem_marks = request.POST.get("third_sem_marks")
+        fourth_sem_marks = request.POST.get("fourth_sem_marks")
+        fifth_sem_marks = request.POST.get("fifth_sem_marks")
+        sixth_sem_marks = request.POST.get("sixth_sem_marks")
+        seventh_sem_marks = request.POST.get("seventh_sem_marks")
+        supplees = request.POST.get("supplees")
+        aggregates = request.POST.get("aggregates")
+        agg = UserMarksModel.objects.create(tenth_obt_marks=tenth_obt_marks, tenth_total_marks=tenth_total_marks, twelve_obt_marks = twelve_obt_marks, twelve_total_marks=twelve_total_marks, jee_rank=jee_rank, first_sem_marks=first_sem_marks, second_sem_marks=second_sem_marks, third_sem_marks=third_sem_marks, fourth_sem_marks=fourth_sem_marks, fifth_sem_marks=fifth_sem_marks, sixth_sem_marks=sixth_sem_marks, seventh_sem_marks=seventh_sem_marks, aggregates=aggregates,supplees=supplees)
+        agg.save()
+        user.save()
+        return HttpResponseRedirect(reverse("user:training_details"))
+    else:
+        return render(request.META['HTTP_REFERER'])
+
+
+@login_required()
+def TrainingDetailsView(request,username):
+    user = User.objects.get(username=username)
+    if request.method == "POST":
+        technology = request.POST.get("technology")
+        project = request.POST.get("project")
+        training_mode = request.POST.get("training_mode")
+        institute_name = request.POST.get("institute_name")
+        institute_address = request.POST.get("institute_address")
+        institute_number = request.POST.get("institute_number")
+        training_duration = request.POST.get("training_duration")
+        train_detail = TrainingInfoModel.objects.create(technology=technology, project =project , training_mode=training_mode, institute_name=institute_name,institute_address=institute_address, institute_number=institute_number,training_duration=training_duration)
+        train_detail.save()
+        user.save()
+        return HttpResponseRedirect(reverse("user:documents_detail"))
+    else:
+        return render(request.META['HTTP_REFERER'])
+
+
+@login_required()
+def DocumentsView(request,username):
+    user = User.objects.get(username=username)
+    if request.method=="POST":
+        if "tenth_dmc" in request.FILES:
+            tenth_dmc = request.FILES.get("tenth_dmc")
+        if "twelvth_dmc" in request.FILES:
+            twelvth_dmc = request.FILES.get("twelvth_dmc")
+        if "first_sem_dmc" in request.FILES:
+            first_sem_dmc = request.FILES.get("first_sem_dmc")
+        if "second_sem_dmc" in request.FILES:
+            second_sem_dmc = request.FILES.get("second_sem_dmc")
+        if "third_sem_dmc" in request.FILES:
+            third_sem_dmc = request.FILES.get("third_sem_dmc")
+        if "fourth_sem_dmc" in request.FILES:
+            fourth_sem_dmc = request.FILES.get("fourth_sem_dmc")
+        if "fifth_sem_dmc" in request.FILES:
+            fifth_sem_dmc = request.FILES.get("fifth_sem_dmc")
+        if "sixth_sem_dmc" in request.FILES:
+            sixth_sem_dmc = request.FILES.get("sixth_sem_dmc")
+        if "seventh_sem_dmc" in request.FILES:
+            seventh_sem_dmc = request.FILES.get("seventh_sem_dmc")
+        docs = DocumentsModel.objects.create(tenth_dmc=tenth_dmc, twelvth_dmc=twelvth_dmc, first_sem_dmc=first_sem_dmc, second_sem_dmc=second_sem_dmc, third_sem_dmc =third_sem_dmc,fourth_sem_dmc=fourth_sem_dmc, fifth_sem_dmc=fifth_sem_dmc, sixth_sem_dmc=sixth_sem_dmc ,seventh_sem_dmc=seventh_sem_dmc)
+        docs.save()
+        user.save()
+        return HttpResponseRedirect(reverse("home"))
+    else:
+        return render(request.META['HTTP_REFERER'])
+
+
+
 
 def HomeView(request):
     return render(request,'TPO_App/home.html')
