@@ -22,7 +22,6 @@ from TPO_App import views
 
 
 urlpatterns = [
-    path('',views.HomeView,name='home'),
-    path('profile/', include('TPO_App.urls')),
+    path('', include('TPO_App.urls')),
     path('admin/', admin.site.urls),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

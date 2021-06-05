@@ -88,7 +88,7 @@ def UserEditInfoView(request,username):
         info.alternate_gmail = request.POST.get("alternate_gmail")
         user.save()
         info.save()
-        return HttpResponseRedirect(reverse("user:marks_details"))
+        return HttpResponseRedirect(reverse("marks_details"))
     else:
         return render(request.META['HTTP_REFERER'])
 
