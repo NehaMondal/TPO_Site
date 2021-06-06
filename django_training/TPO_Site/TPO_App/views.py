@@ -15,11 +15,11 @@ def UserLogoutView(request):
 
 def UserLoginView(request):
     if request.method == 'POST':
-        email = request.POST.get('email')
+        username = request.POST.get('username')
         password = request.POST.get('password')
-        user = authenticate(email=email, password=password)
+        user = authenticate(username=username, password=password)
         if user:
-            if user.is_active():
+            if user.is_active:
                 login(request,user)
                 return HttpResponseRedirect(reverse('home'))
         else:
@@ -34,7 +34,7 @@ def UserRegistrationView(request):
         password = request.POST.get("password")
         confirm_password = request.POST.get("confirm_password")
         if password == confirm_password:
-            user = User.objects.create_user(username=username, email=email, password=password)
+            user = User.objects.create(username=username, email=email, password=password)
             user.set_password(user.password)
             user.save()
             user_info = UserInfoModel.objects.create(user=user)
@@ -94,7 +94,8 @@ def UserEditInfoView(request,username):
 
 @login_required()
 def UserMarksView(request,username):
-    user = User.objects.get(username=username)
+    temp_user = User.objects.get(username=username)
+    user = UserInfoModel.objects.get(user = temp_user)
     if request.method=="POST":
         name = str(request.POST.get("name"))
         if " " in name:
@@ -118,10 +119,10 @@ def UserMarksView(request,username):
         seventh_sem_marks = request.POST.get("seventh_sem_marks")
         supplees = request.POST.get("supplees")
         aggregates = request.POST.get("aggregates")
-        agg = UserMarksModel.objects.create(tenth_obt_marks=tenth_obt_marks, tenth_total_marks=tenth_total_marks, tenth_percentage=tenth_percentage, twelve_obt_marks = twelve_obt_marks, twelve_total_marks=twelve_total_marks, twelve_percentage=twelve_percentage, jee_rank=jee_rank, first_sem_marks=first_sem_marks, second_sem_marks=second_sem_marks, third_sem_marks=third_sem_marks, fourth_sem_marks=fourth_sem_marks, fifth_sem_marks=fifth_sem_marks, sixth_sem_marks=sixth_sem_marks, seventh_sem_marks=seventh_sem_marks, aggregates=aggregates,supplees=supplees)
+        agg = UserMarksModel.objects.create(user = user, tenth_obt_marks=tenth_obt_marks, tenth_total_marks=tenth_total_marks, tenth_percentage=tenth_percentage, twelve_obt_marks = twelve_obt_marks, twelve_total_marks=twelve_total_marks, twelve_percentage=twelve_percentage, jee_rank=jee_rank, first_sem_marks=first_sem_marks, second_sem_marks=second_sem_marks, third_sem_marks=third_sem_marks, fourth_sem_marks=fourth_sem_marks, fifth_sem_marks=fifth_sem_marks, sixth_sem_marks=sixth_sem_marks, seventh_sem_marks=seventh_sem_marks, aggregates=aggregates,supplees=supplees)
         agg.save()
         user.save()
-        return HttpResponseRedirect(reverse('home',kwargs={"pk":agg.pk}))
+        return HttpResponseRedirect(reverse('home'))
     else:
         return render(request,"TPO_App/marks_details.html")
 
@@ -129,6 +130,7 @@ def UserMarksView(request,username):
 @login_required()
 def TrainingDetailsView(request,username):
     user = User.objects.get(username=username)
+    info = UserInfoModel.objects.get(user = user)
     if request.method == "POST":
         technology = request.POST.get("technology")
         project = request.POST.get("project")
@@ -137,10 +139,10 @@ def TrainingDetailsView(request,username):
         institute_address = request.POST.get("institute_address")
         institute_number = request.POST.get("institute_number")
         training_duration = request.POST.get("training_duration")
-        train_detail = TrainingInfoModel.objects.create(technology=technology, project =project , training_mode=training_mode, institute_name=institute_name,institute_address=institute_address, institute_number=institute_number,training_duration=training_duration)
+        train_detail = TrainingInfoModel.objects.create(user = info, technology=technology, project =project , training_mode=training_mode, institute_name=institute_name,institute_address=institute_address, institute_number=institute_number,training_duration=training_duration)
         train_detail.save()
         user.save()
-        return HttpResponseRedirect(reverse("home",kwargs={"pk":train_detail.pk}))
+        return HttpResponseRedirect(reverse("home"))
     else:
         return render(request,"TPO_App/training_details.html")
 
@@ -148,6 +150,7 @@ def TrainingDetailsView(request,username):
 @login_required()
 def DocumentsView(request,username):
     user = User.objects.get(username=username)
+    info = UserInfoModel.objects.get(user = user)
     if request.method=="POST":
         if "tenth_dmc" in request.FILES:
             tenth_dmc = request.FILES.get("tenth_dmc")
@@ -167,10 +170,10 @@ def DocumentsView(request,username):
             sixth_sem_dmc = request.FILES.get("sixth_sem_dmc")
         if "seventh_sem_dmc" in request.FILES:
             seventh_sem_dmc = request.FILES.get("seventh_sem_dmc")
-        docs = DocumentsModel.objects.create(tenth_dmc=tenth_dmc, twelvth_dmc=twelvth_dmc, first_sem_dmc=first_sem_dmc, second_sem_dmc=second_sem_dmc, third_sem_dmc =third_sem_dmc,fourth_sem_dmc=fourth_sem_dmc, fifth_sem_dmc=fifth_sem_dmc, sixth_sem_dmc=sixth_sem_dmc ,seventh_sem_dmc=seventh_sem_dmc)
+        docs = DocumentsModel.objects.create(user = info, tenth_dmc=tenth_dmc, twelvth_dmc = twelvth_dmc, first_sem_dmc=first_sem_dmc, second_sem_dmc=second_sem_dmc, third_sem_dmc =third_sem_dmc,fourth_sem_dmc=fourth_sem_dmc, fifth_sem_dmc=fifth_sem_dmc, sixth_sem_dmc=sixth_sem_dmc ,seventh_sem_dmc=seventh_sem_dmc)
         docs.save()
         user.save()
-        return HttpResponseRedirect(reverse("home",kwargs={"pk":docs.pk}))
+        return HttpResponseRedirect(reverse("home"))
     else:
         return render(request,"TPO_App/documents_detail.html")
 

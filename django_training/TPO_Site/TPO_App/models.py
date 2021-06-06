@@ -60,8 +60,8 @@ class UserMarksModel(models.Model):
     supplees = models.PositiveSmallIntegerField(null=True)
     aggregates = models.PositiveSmallIntegerField(null=True)
 
-    def __str__(self):
-        return self.user.username
+    # def __str__(self):
+    #     return self.user.username
 
 
 class TrainingInfoModel(models.Model):
@@ -78,8 +78,8 @@ class TrainingInfoModel(models.Model):
     institute_number = models.PositiveSmallIntegerField(null=True, blank=True)
     training_duration = models.PositiveSmallIntegerField(null = False)
 
-    def __str__(self):
-        return self.user.username
+    # def __str__(self):
+    #     return self.user.username
 
 
 
@@ -95,5 +95,5 @@ class DocumentsModel(models.Model):
     sixth_sem_dmc = models.FileField(upload_to="documents/sixth_sem",blank=True)
     seventh_sem_dmc = models.FileField(upload_to="documents/seventh_sem",blank=True)
 
-    def __str__(self):
-        return self.user.username
+    # def __str__(self):
+    #     return self.user.username
