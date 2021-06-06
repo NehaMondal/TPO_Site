@@ -88,7 +88,7 @@ def UserEditInfoView(request,username):
         info.alternate_gmail = request.POST.get("alternate_gmail")
         user.save()
         info.save()
-        return HttpResponseRedirect(reverse("TPO_App:marks_details.html"))
+        return HttpResponseRedirect(reverse("home"))
     else:
         return render(request,"TPO_App/edit_info.html")
 
@@ -96,10 +96,18 @@ def UserEditInfoView(request,username):
 def UserMarksView(request,username):
     user = User.objects.get(username=username)
     if request.method=="POST":
+        name = str(request.POST.get("name"))
+        if " " in name:
+            user.first_name, user.last_name = name.split(" ")
+        else:
+            user.first_name = name
+            user.last_name = ""
         tenth_obt_marks = request.POST.get("tenth_obt_marks")
         tenth_total_marks = request.POST.get("tenth_total_marks")
+        tenth_percentage = request.POST.get("tenth_percentage")
         twelve_obt_marks = request.POST.get("twelve_obt_marks")
         twelve_total_marks = request.POST.get("twelve_total_marks")
+        twelve_percentage = request.POST.get("twelve_percentage")
         jee_rank = request.POST.get("jee_rank")
         first_sem_marks = request.POST.get("first_sem_marks")
         second_sem_marks = request.POST.get("second_sem_marks")
@@ -110,10 +118,10 @@ def UserMarksView(request,username):
         seventh_sem_marks = request.POST.get("seventh_sem_marks")
         supplees = request.POST.get("supplees")
         aggregates = request.POST.get("aggregates")
-        agg = UserMarksModel.objects.create(tenth_obt_marks=tenth_obt_marks, tenth_total_marks=tenth_total_marks, twelve_obt_marks = twelve_obt_marks, twelve_total_marks=twelve_total_marks, jee_rank=jee_rank, first_sem_marks=first_sem_marks, second_sem_marks=second_sem_marks, third_sem_marks=third_sem_marks, fourth_sem_marks=fourth_sem_marks, fifth_sem_marks=fifth_sem_marks, sixth_sem_marks=sixth_sem_marks, seventh_sem_marks=seventh_sem_marks, aggregates=aggregates,supplees=supplees)
+        agg = UserMarksModel.objects.create(tenth_obt_marks=tenth_obt_marks, tenth_total_marks=tenth_total_marks, tenth_percentage=tenth_percentage, twelve_obt_marks = twelve_obt_marks, twelve_total_marks=twelve_total_marks, twelve_percentage=twelve_percentage, jee_rank=jee_rank, first_sem_marks=first_sem_marks, second_sem_marks=second_sem_marks, third_sem_marks=third_sem_marks, fourth_sem_marks=fourth_sem_marks, fifth_sem_marks=fifth_sem_marks, sixth_sem_marks=sixth_sem_marks, seventh_sem_marks=seventh_sem_marks, aggregates=aggregates,supplees=supplees)
         agg.save()
         user.save()
-        return HttpResponseRedirect(reverse("TPO_App:training_details"))
+        return HttpResponseRedirect(reverse('home',kwargs={"pk":agg.pk}))
     else:
         return render(request,"TPO_App/marks_details.html")
 
@@ -132,9 +140,9 @@ def TrainingDetailsView(request,username):
         train_detail = TrainingInfoModel.objects.create(technology=technology, project =project , training_mode=training_mode, institute_name=institute_name,institute_address=institute_address, institute_number=institute_number,training_duration=training_duration)
         train_detail.save()
         user.save()
-        return HttpResponseRedirect(reverse("TPO_App:documents_detail"))
+        return HttpResponseRedirect(reverse("home",kwargs={"pk":train_detail.pk}))
     else:
-        return render(request,"TPO_App:training_details")
+        return render(request,"TPO_App/training_details.html")
 
 
 @login_required()
@@ -162,7 +170,7 @@ def DocumentsView(request,username):
         docs = DocumentsModel.objects.create(tenth_dmc=tenth_dmc, twelvth_dmc=twelvth_dmc, first_sem_dmc=first_sem_dmc, second_sem_dmc=second_sem_dmc, third_sem_dmc =third_sem_dmc,fourth_sem_dmc=fourth_sem_dmc, fifth_sem_dmc=fifth_sem_dmc, sixth_sem_dmc=sixth_sem_dmc ,seventh_sem_dmc=seventh_sem_dmc)
         docs.save()
         user.save()
-        return HttpResponseRedirect(reverse("home"))
+        return HttpResponseRedirect(reverse("home",kwargs={"pk":docs.pk}))
     else:
         return render(request,"TPO_App/documents_detail.html")
 

@@ -15,7 +15,7 @@ class UserInfoModel(models.Model):
     BRANCH = (
         ('CS', 'computer_science'),
         ('ME', 'mechanical'),
-        ('EE', 'electrical'),
+        ('ELE', 'electrical'),
         ('ECE', 'electronics_comm'),
         ('IT', 'information_technology')
     )
@@ -45,16 +45,18 @@ class UserMarksModel(models.Model):
     user = models.ForeignKey(UserInfoModel, on_delete=models.CASCADE, related_name="marks")
     tenth_obt_marks = models.PositiveSmallIntegerField()
     tenth_total_marks = models.PositiveSmallIntegerField()
+    tenth_percentage = models.PositiveSmallIntegerField()
     twelve_obt_marks = models.PositiveSmallIntegerField()
     twelve_total_marks = models.PositiveSmallIntegerField()
+    twelve_percentage = models.PositiveSmallIntegerField()
     jee_rank = models.PositiveSmallIntegerField(null=True)
-    first_sem_marks = models.PositiveSmallIntegerField(null=True)
-    second_sem_marks = models.PositiveSmallIntegerField(null=True)
-    third_sem_marks = models.PositiveSmallIntegerField(null=True)
-    fourth_sem_marks = models.PositiveSmallIntegerField(null=True)
-    fifth_sem_marks = models.PositiveSmallIntegerField(null=True)
-    sixth_sem_marks = models.PositiveSmallIntegerField(null=True)
-    seventh_sem_marks = models.PositiveSmallIntegerField(null=True)
+    first_sem_marks = models.PositiveSmallIntegerField(null=True,blank=True)
+    second_sem_marks = models.PositiveSmallIntegerField(null=True,blank=True)
+    third_sem_marks = models.PositiveSmallIntegerField(null=True,blank=True)
+    fourth_sem_marks = models.PositiveSmallIntegerField(null=True,blank=True)
+    fifth_sem_marks = models.PositiveSmallIntegerField(null=True,blank=True)
+    sixth_sem_marks = models.PositiveSmallIntegerField(null=True,blank=True)
+    seventh_sem_marks = models.PositiveSmallIntegerField(null=True,blank=True)
     supplees = models.PositiveSmallIntegerField(null=True)
     aggregates = models.PositiveSmallIntegerField(null=True)
 
@@ -85,13 +87,13 @@ class DocumentsModel(models.Model):
     user = models.ForeignKey(UserInfoModel, on_delete=models.CASCADE, related_name="document_proof")
     tenth_dmc = models.FileField(upload_to="documents/tenth_dmc")
     twelvth_dmc = models.FileField(upload_to="documents/twelvth_dmc")
-    first_sem_dmc = models.FileField(upload_to="documents/first_sem")
-    second_sem_dmc = models.FileField(upload_to="documents/second_sem")
-    third_sem_dmc = models.FileField(upload_to="documents/third_sem")
-    fourth_sem_dmc = models.FileField(upload_to="documents/fourth_sem")
-    fifth_sem_dmc = models.FileField(upload_to="documents/fifth_sem")
-    sixth_sem_dmc = models.FileField(upload_to="documents/sixth_sem")
-    seventh_sem_dmc = models.FileField(upload_to="documents/seventh_sem")
+    first_sem_dmc = models.FileField(upload_to="documents/first_sem",blank=True)
+    second_sem_dmc = models.FileField(upload_to="documents/second_sem",blank=True)
+    third_sem_dmc = models.FileField(upload_to="documents/third_sem",blank=True)
+    fourth_sem_dmc = models.FileField(upload_to="documents/fourth_sem",blank=True)
+    fifth_sem_dmc = models.FileField(upload_to="documents/fifth_sem",blank=True)
+    sixth_sem_dmc = models.FileField(upload_to="documents/sixth_sem",blank=True)
+    seventh_sem_dmc = models.FileField(upload_to="documents/seventh_sem",blank=True)
 
     def __str__(self):
         return self.user.username

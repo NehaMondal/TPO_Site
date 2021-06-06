@@ -12,12 +12,13 @@
 <body>
 <div class="container">
     <h3>Personal Details</h3>
+    <br>
     <form method="POST">
         {% csrf_token %}
         <div class="form-group">
             <label class="col-md-2 col-sm-3 col-xs-12 control-label">User Name</label>
             <div class="col-md-10 col-sm-9 col-xs-12">
-                <input type="text" class="form-control" value="{{user.username}}" name="username">
+                <input type="text" class="form-control" value="{{user.username}}" name="">
             </div>
         </div>
         <div class="form-group">
@@ -26,7 +27,139 @@
                 <input type="text" class="form-control" value="{{user.get_full_name}}" name="name" required>
             </div>
         </div>
+        <div class="form-group">
+            <label class="col-md-2  col-sm-3 col-xs-12 control-label">Email</label>
+            <div class="col-md-10 col-sm-9 col-xs-12">
+                <input type="email" class="form-control" value="{{user.email}}" name="email" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-2 col-sm-3 col-xs-12 control-label">Roll No</label>
+            <div class="col-md-10 col-sm-9 col-xs-12">
+                <input type="text" class="form-control" value="{{info.roll_no}}" name="roll_no" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-2 col-sm-3 col-xs-12 control-label">Passing Year</label>
+            <div class="col-md-10 col-sm-9 col-xs-12">
+                <input type="text" class="form-control" value="{{info.passing_year}}" name="passing_year" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-2 col-sm-3 col-xs-12 control-label">Branch</label>
+            <div class="col-md-10 col-sm-9 col-xs-12">
+                <select class="form-control" name="branch" required>
+                    <option value="{{info.branch}}" selected>{{info.branch|upper}}</option>
+                    <option value="CSE">CSE</option>
+                    <option value="IT">IT</option>
+                    <option value="ECE">ECE</option>
+                    <option value="CSE">ELE</option>
+                    <option value="ME">ME</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-2 col-sm-3 col-xs-12 control-label">Course</label>
+            <div class="col-md-10 col-sm-9 col-xs-12">
+                <select class="form-control" name="course" required>
+                    <option value="{{info.course}}" selected>{{info.course|upper}}</option>
+                    <option value="BTECH">BTECH</option>
+                    <option value="MTECH">MTECH</option>
+                    <option value="MBA">MBA</option>
+                    <option value="BBA">BBA</option>
+                    <option value="BCA">BCA</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-2 col-sm-3 col-xs-12 control-label">College</label>
+            <div class="col-md-10 col-sm-9 col-xs-12">
+                <input type="text" class="form-control" value="{{info.college|title}}" name="college" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-2 col-sm-3 col-xs-12 control-label">Date Of Birth</label>
+            <div class="col-md-10 col-sm-9 col-xs-12">
+                <input type="date" class="form-control" value="{{info.dob}}" name="dob" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-2 col-sm-3 col-xs-12 control-label">Father Name</label>
+            <div class="col-md-10 col-sm-9 col-xs-12">
+                <input type="text" class="form-control" value="{{info.father_name}}" name="father_name" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-2 col-sm-3 col-xs-12 control-label">Mother Name</label>
+            <div class="col-md-10 col-sm-9 col-xs-12">
+                <input type="text" class="form-control" value="{{info.mother_name}}" name="mother_name" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-2 col-sm-3 col-xs-12 control-label">Father's Number</label>
+            <div class="col-md-10 col-sm-9 col-xs-12">
+                <input type="tel" class="form-control" value="{{info.father_number}}" name="father_number" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-2 col-sm-3 col-xs-12 control-label">Mother's Number</label>
+            <div class="col-md-10 col-sm-9 col-xs-12">
+                <input type="tel" class="form-control" value="{{info.mother_number}}" name="mother_number" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-2 col-sm-3 col-xs-12 control-label">Personal Number</label>
+            <div class="col-md-10 col-sm-9 col-xs-12">
+                <input type="tel" class="form-control" value="{{info.phone_number}}" name="phone_number" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-2 col-sm-3 col-xs-12 control-label">Address</label>
+            <div class="col-md-10 col-sm-9 col-xs-12">
+                <input type="text" class="form-control" value="{{info.address}}" name="address" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-2 col-sm-3 col-xs-12 control-label">City</label>
+            <div class="col-md-10 col-sm-9 col-xs-12">
+                <input type="text" class="form-control" value="{{info.city}}" name="city" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-2 col-sm-3 col-xs-12 control-label">Pincode</label>
+            <div class="col-md-10 col-sm-9 col-xs-12">
+                <input type="number" class="form-control" value="{{info.pincode}}" name="pincode" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-2 col-sm-3 col-xs-12 control-label">State</label>
+            <div class="col-md-10 col-sm-9 col-xs-12">
+                <input type="text" class="form-control" value="{{info.state}}" name="state" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-2 col-sm-3 col-xs-12 control-label">Alternate Email</label>
+            <div class="col-md-10 col-sm-9 col-xs-12">
+                <input type="email" class="form-control" value="{{info.alternate_gmail}}" name="alternate_gmail" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-2 col-sm-3 col-xs-12 control-label">Gender</label>
+            <div class="col-md-10 col-sm-9 col-xs-12">
+                <select class="form-control" name="gender" required>
+                    <option value="{{info.gender}}" selected>{{info.gender|upper}}</option>
+                    <option value="male">MALE</option>
+                    <option value="female">FEMALE</option>
+                    <option value="other">OTHER</option>
+                </select>
+            </div>
+        </div>
 
+        <div class="form-group">
+            <div class="col-md-10 col-sm-9 col-xs-12 col-md-push-2 col-sm-push-3 col-xs-push-0">
+                <input class="btn btn-primary" type="submit" value="SUBMIT">
+            </div>
+        </div>
     </form>
 </div>
 

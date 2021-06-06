@@ -22,7 +22,7 @@ from TPO_App import views
 
 
 urlpatterns = [
-    path('', include('TPO_App.urls')),
+    path('edit_info/', include('TPO_App.urls')),
     path('', views.HomeView, name="home"),
     path('admin/', admin.site.urls),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
