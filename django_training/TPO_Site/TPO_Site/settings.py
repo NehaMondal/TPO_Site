@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
+import django_heroku
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -25,9 +26,9 @@ MEDIA_DIR = os.path.join(BASE_DIR,'media')
 SECRET_KEY = 'uvzvv@u!3d^6vjosc#aoj5+c636w&u^%3$t8$q+6jvb57bz*g&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['https://green-termite-69.loca.lt','127.0.0.1']
+ALLOWED_HOSTS = ['tposite.herokuapp.com','127.0.0.1']
 
 
 # Application definition
@@ -122,7 +123,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR,'static')]
+STATIC_ROOT = os.path.join(BASE_DIR,'static')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = MEDIA_DIR
 LOGIN_URL = '/login/'
 LOGOUT_REDIRECT_URL= '/logout/'
+
+django_heroku.settings(locals())
