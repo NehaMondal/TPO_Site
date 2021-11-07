@@ -10,6 +10,7 @@ urlpatterns = [
     path('',views.HomeView,name='home'),
     path('login/',views.UserLoginView, name='user_login'),
     path('registration/', views.UserRegistrationView, name="user_registration"),
+    path('placement/',views.PlacementView,name="placement"),
     path('logout/', views.UserLogoutView, name='user_logout'),
     #path('<str:username>/', views.UserInfoView, name="profile"),
     path('<str:username>/editinfo/', views.UserEditInfoView, name="edit_info"),

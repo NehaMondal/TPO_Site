@@ -62,11 +62,14 @@
                     <a class="dropdown-item" href="{% url "TPO_App:documents_detail" username=user.username %}">Documents Detail</a>
                   </div>
               </div>
-              <div class="dropdown">
-                <button type="button" class="btn text-white font-weight-bold dropdown-toggle" data-toggle="dropdown">PLACEMENT</button>
+              <div>
+                <li class="nav-item">
+                <a href="{% url 'TPO_App:placement' %}" class="nav-link text-white">Placement</a>
+              </li>
+                <!--<button type="button" class="btn text-white font-weight-bold dropdown-toggle" data-toggle="dropdown">PLACEMENT</button>
                   <div class="dropdown-menu">
                     <a class="dropdown-item" href="#">Notification</a>
-                  </div>
+                  </div>-->
                 </div>
                 <li class="nav-item">
                 <a href="{% url 'TPO_App:user_logout' %}" class="nav-link text-white">Log Out</a>

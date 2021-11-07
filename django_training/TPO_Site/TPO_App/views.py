@@ -7,6 +7,7 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from django.urls import reverse
 
+
 # Create your views here.
 @login_required()
 def UserLogoutView(request):
@@ -177,7 +178,8 @@ def DocumentsView(request,username):
     else:
         return render(request,"TPO_App/documents_detail.html")
 
-
+def PlacementView(request):
+    return render(request,"TPO_App/placement.html")
 
 
 def HomeView(request):

@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <title>Placement</title>
+</head>
+<style>
+  *{margin: 0;padding: 0;box-sizing: border-box;}
+  body{
+    background-color: #b4ada3;
+  }
+.pricing{
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+    position: relative;
+  }
+  .pricing::before{
+    content: "";
+    position:absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    background:linear-gradient(160deg, #16c9f6 55%,#fff 0% );
+    opacity: 0.4%;
+    z-index: -1;
+  }
+  .pricing h1{
+    padding-bottom: 25px;
+  }
+  .card{
+    transition: 0.4s ease;
+    margin: 10PX 10PX 10PX 10PX;
+  }
+  .card-header{
+    font-size: 1.6rem;
+    font-weight: bold;
+    background: gainsboro !important;
+    padding: 25px !important;
+  }
+  .card-body{
+    padding: 30px 0px !important;
+    margin-right: 15px;
+  }
+  .card-footer{
+    background: white !important;
+    padding: 10px 0px !important;
+  }
+  .card-footer a:hover{
+    color: #fff;
+    background: #1e5799;
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+  }
+  .card:hover{
+    transform: translateY(-20px);
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+
+  }
+  .card:hover .card-header{
+    color: darkcyan;
+  }
+  li{
+    list-style: none;
+  }
+</style>
+<body>
+    <!-- <div class="container"> -->
+    <section class="pricing" id="interviewid">
+        <div class="container heading text-center">
+          <h1 class="text-center font-weight-bold text-black">THE INFORMATION YOU NEED TO KNOW ABOUT COMPANIES</h1>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="card text-center">
+                  <div class="card-header" id="daffo"><img src="{% static 'TPO_App/images/daffidodil.png' %}" alt=""  style="width: 50%;"><h4> <b> DAFFODIL SOFTWARE LTD,HISAR </b></h4></div>
+                  <div class="card-body">
+                    <li>
+                      <p>Daffodil Software is a software technology partner to 100+ organizations across the globe. With our roots into innovation, tech agility & time-proven processes, our team of 800+ technologists strive to shape the tech industry and help businesses elevate their value proposition through technology. Our ability to look beyond technologies and deliver innovative solutions are not the only things that set us apart.        </p>
+                    </li>
+                  </div>
+                  <div class="card-footer">
+                    <a href="https://www.daffodilsw.com/" target="_blank">You can click here to visit the official site of this company</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="card text-center">
+                    <div class="card-header"><img src="{% static 'TPO_App/images/unthinkable.jpg' %}" alt=""  style="width: 50%; height: 30%;"> <H4> <B>UNTHINKABLE SOLUTIOND LLP,GURUGRAM</B></H4> </div>
+                    <div class="card-body">
+                      <li>
+                        <p>Unthinkable combines speed,scale,and future technology.The result is the freedom to turn ideas into innovative software applications faster and drive real business growth. Our team believes in taking a radically different approach to software development by solving problems at the technology level.</p>
+                      </li>
+                    </div>
+                    <div class="card-footer">
+                      <a href="https://www.unthinkable.co/" target="_blank">You can click here to visit the official site of this company</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                  <div class="card text-center">
+                      <div class="card-header"><img src="{% static 'TPO_App/images/softprodigy.png' %}" alt=""  style="width: 50%;"><H4><B> SOFTPRODIGY SYSTEM SOLUTIONS(P)LTD,MOHALI</B></H4></div>
+                      <div class="card-body">
+                        <li>
+                          <p>SoftProdigy set its mark in the world of digital market back in 2006 and has been expanding its horizons since then! We have always targeted to grow through the growth of our clients and that works well for us.For more than a decade, we have been striving hard to stay ahead on the ladder of success by serving numerous businesses to achieve their growth.</p>
+                        </li>
+                      </div>
+                      <div class="card-footer">
+                        <a href="https://www.softprodigysolutions.com/about-us/" target="_blank">You can click here to visit the official site of this company</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-12">
+                    <div class="card text-center">
+                        <div class="card-header"><img src="{% static 'TPO_App/images/tcs.png' %}" alt=""  style="width: 50%;"> <h4><b>TCS(NEW DELHI)</b></h4></div>
+                        <div class="card-body">
+                          <li>
+                            <p>Tata Consultancy Services (TCS) is an Indian multinational information technology (IT) services and consulting company, headquartered in Mumbai, Maharashtra, India and largest campus and workforce in Chennai, Tamil Nadu, India.As of May 2021,TCS is the largest company in the IT sector in the world by market capitalization of $169.2 billion.</p>
+                          </li>
+                        </div>
+                        <div class="card-footer">
+                          <a href="https://www.tcs.com" target="_blank">You can click here to visit the official site of this company</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-3 col-md-6 col-12">
+                          <div class="card text-center">
+                              <div class="card-header"><img src="{% static 'TPO_App/images/ca.png' %}" alt=""  style="width: 50%;"><h4><b>CLOUD ANALOGY SOFTECH PVT.LTD,KURUKSHETRA</b></h4></div>
+                              <div class="card-body">
+                                <li>
+                                  <p>Cloud Analogy is the world’s leading Salesforce Development Company that offers cutting-edge cloud computing solutions and services to keep our clients business ahead of the crowd by miles. Our teams of experienced Salesforce professionals are problem-solvers and collaborate with our clients and customers to solve the most complicated challenges. </p>
+                                </li>
+                              </div>
+                              <div class="card-footer">
+                                <a href="https://www.cloudanalogy.com/" target="_blank">You can click here to visit the official site of this company</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6 col-12">
+                            <div class="card text-center">
+                                <div class="card-header"><img src="{% static 'TPO_App/images/altruist.jpg' %}" alt=""  style="width: 50%;"><h4><b>ALTRUIST TECHNOLOGIES PVT.LTD,PANCHKULA</b></h4></div>
+                                <div class="card-body">
+                                  <li>
+                                    <p>Altruist Technologies Founded in 2005 As a mobile Value Added Services company, is now the leading provider of Telecom Solutions in 50+ countries to over 100+ Telecom Operators and Enterprises across Asia, Africa, Europe & Middle East. Altruist group is one of the largest and the most successful group with 11 companies and 12,000+ strong team, spread across various countries.</p>
+                                  </li>
+                                </div>
+                                <div class="card-footer">
+                                  <a href="https://www.altruistindia.com/" target="_blank">You can click here to visit the official site of this company</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-12">
+                              <div class="card text-center">
+                                  <div class="card-header"><img src="{% static 'TPO_App/images/xenon.png' %}" alt=""  style="width: 70%;"><h4><b>XENON STACK,MOHALI</b></h4></div>
+                                  <div class="card-body">
+                                    <li>
+                                      <p>A Product Engineering, Technology Services and Consulting company building Intelligent Distributed Systems at Scale, AI, and Data-driven Decision Platforms and Solutions. We are enabling enterprises for Digital transformation with Cloud, Data and AI Strategy and Enterprise Agility.More than 55 projects Delivered on Cloud, Big Data, Enterprise Applications.</p>
+                                    </li>
+                                  </div>
+                                  <div class="card-footer">
+                                    <a href="https://www.xenonstack.com/careers/" target="_blank">You can click here to visit the official site of this company</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-3 col-md-6 col-12">
+                                <div class="card text-center">
+                                    <div class="card-header"><img src="{% static 'TPO_App/images/nanotech.png' %}" alt=""  style="width: 50%;"><h4><b>NANOTECH SOFTWARE APPLICATION SOLUTION,GURUGRAM</b></h4></div>
+                                    <div class="card-body">
+                                      <li>
+                                        <p>At Nanotech Soft N App IT Solution, where every coder is a Wizard of his trait, using his creative talents to sculpt an idea into a digital product without compromising the international standards. In order to achieve perfection, we make sure that every project is managed by Maestros, who have relinquished their entire life to the symphony of digital realm. </p>
+                                      </li>
+                                    </div>
+                                    <div class="card-footer">
+                                      <a href="https://www.nanotech-softapp.com/" target="_blank">You can click here to visit the official site of this company</a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="container">
+                                  <div class="row">
+                                    <div class="col-lg-3 col-md-6 col-12">
+                                      <div class="card text-center">
+                                          <div class="card-header"><img src="{% static 'TPO_App/images/xenon.png' %}" alt=""  style="width: 50%;"><h4><b>NEW SOLUTIONS,CHANDIGARH</b></h4></div>
+                                          <div class="card-body">
+                                            <li>
+                                              <p>A technical interview is a job interview for any position that relates to the tech industry, such as information technology.During the technical interview,the interviewer will assess your technical knowledge, skills and abilities as they relate to the needs of the specific job you are applying to.</p>
+                                            </li>
+                                          </div>
+                                          <div class="card-footer">
+                                            <a href="https://www.geeksforgeeks.org/" target="_blank">You can click here to visit the official site of this company</a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-lg-3 col-md-6 col-12">
+                                        <div class="card text-center">
+                                            <div class="card-header"><img src="{% static 'TPO_App/images/codebrew.jpg' %}" alt=""  style="width: 50%;"><h4><b>CODE BREW LABS,CHANDIGARH</b></h4></div>
+                                            <div class="card-body">
+                                              <li>
+                                                <p>Code Brew Labs is a firm specializing in technological solutions for businesses - the ones that exist, and the ones that are still in their nascent stages. We make technology an invaluable asset for your business - be it a startup, an SMB or an enterprise - all of these are included in our expanding repertoire.Our work has taken us to explore newer horizons in the technological realm.</p>
+                                              </li>
+                                            </div>
+                                            <div class="card-footer">
+                                              <a href="https://www.code-brew.com" target="_blank">You can click here to visit the official site of this company</a>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-12">
+                                          <div class="card text-center">
+                                              <div class="card-header"><img src="{% static 'TPO_App/images/radicle.png' %}" alt=""  style="width: 50%;"><h4><b>RADICLE SOFTWARE PVT.LTD,MOHALI</b></h4></div>
+                                              <div class="card-body">
+                                                <li>
+                                                  <p>Radicle is a US-based firm providing Implementation and Advisory services in Information Technology. Radicle was founded by industry veterans with more than 40 years'​ experience in serving clients in the US and building systems integration businesses here.  Our teams have deep understanding of various industries and significant track records of serving US clients.</p>
+                                                </li>
+                                              </div>
+                                              <div class="card-footer">
+                                                <a href="https://radicleinc.com/" target="_blank">You can click here to visit the official site of this company</a>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="col-lg-3 col-md-6 col-12">
+                                            <div class="card text-center">
+                                                <div class="card-header"><img src="{% static 'TPO_App/images/bluebash.png' %}" alt=""  style="width: 50%;"><h4><b>BLUEBASH CONSULTING PVT.LTD,GURUGRAM</b></h4></div>
+                                                <div class="card-body">
+                                                  <li>
+                                                    <p>Bluebash Consulting Private Limited is an unlisted private company incorporated on 11 March, 2019. It is classified as a private limited company and is located in Mohali, Punjab. It's authorized share capital is INR 1.00 lac and the total paid-up capital is INR 1.00 lac.</p>
+                                                  </li>
+                                                </div>
+                                                <div class="card-footer">
+                                                  <a href="https://www.bluebash.co/" target="_blank">You can click here to visit the official site of this company</a>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="container">
+                                              <div class="row">
+                                                <div class="col-lg-3 col-md-6 col-12">
+                                                  <div class="card text-center">
+                                                      <div class="card-header"><img src="{% static 'TPO_App/images/josh.png' %}" alt=""  style="width: 50%;"><h4><b>JOSH TECHNOLOGY GROUP,GURUGRAM</b></h4></div>
+                                                      <div class="card-body">
+                                                        <li>
+                                                          <p>JTG is a niche product development company working with various fast growing US based startups on new products across multiple domains.JTG provides a rare opportunity to work on various new technologies & use them to innovate across different domains by transforming ideas into real life products. Some of the domains JTG is working in are as follows - Targeted Advertising, Automotive Retail, Lead Analytics, Energy Trading, etc.</p>
+                                                        </li>
+                                                      </div>
+                                                      <div class="card-footer">
+                                                        <a href="https://www.joshtechnologygroup.com/" target="_blank">You can click here to visit the official site of this company</a>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-lg-3 col-md-6 col-12">
+                                                    <div class="card text-center">
+                                                        <div class="card-header"><img src="{% static 'TPO_App/images/coforge.png' %}" alt=""  style="width: 50%;"><h4><b>COFORGE LTD.(ERSTWHILE NIIT TECHNOLOGIES LTD.),NOIDA</b></h4></div>
+                                                        <div class="card-body">
+                                                          <li>
+                                                            <p>Coforge is a leading global IT solutions organization, enabling its clients to transform at the intersect of domain expertise and emerging technologies to achieve real-world business impact. A focus on very select industries, a detailed understanding of the underlying processes of those industries and partnerships with leading platforms provides us a distinct vantage.We leverage AI, Cloud and Insight driven technologies, allied with our industry expertise.</p>
+                                                          </li>
+                                                        </div>
+                                                        <div class="card-footer">
+                                                          <a href="https://www.coforgetech.com/" target="_blank">You can click here to visit the official site of this company</a>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-md-6 col-12">
+                                                      <div class="card text-center">
+                                                          <div class="card-header"><img src="{% static 'TPO_App/images/codequotient.jpg' %}" alt=""  style="width: 70%;"><h4><b>CODEQUOTIENT,MOHALI</b></h4></div>
+                                                          <div class="card-body">
+                                                            <li>
+                                                              <p>CodeQuotient was a dream which was envisioned 4 years back to make programming education easy and accessible for Indian students. We designed a program which is market oriented, fun to learn and focus on setting a strong base for a programming career. Our students are an asset for any team from day one, and trained to be Supercoders.We’re working to bring out the coding quotient of aspiring programmers. The focus is setting up a strong foundation of technical skills with real time mentoring, deep analytics and community based learning with chosen students. </p>
+                                                            </li>
+                                                          </div>
+                                                          <div class="card-footer">
+                                                            <a href="https://codequotient.com/" target="_blank">You can click here to visit the official site of this company</a>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                      <div class="col-lg-3 col-md-6 col-12">
+                                                        <div class="card text-center">
+                                                            <div class="card-header"><img src="{% static 'TPO_App/images/enest.png' %}" alt=""  style="width: 50%;"><h4><b>ENEST TECHNOLOGIES PVT.LTD,MOHALI</b></h4></div>
+                                                            <div class="card-body">
+                                                              <li>
+                                                                <p>eNest Technologies Pvt. Ltd is an IT staffing and Customised Software Development company that is bent on changing the global technology space with its certified, technology expert resources. eNest is developing into a global leader with its extensive service of providing automating technology through software development and by building a team of professionals for you. Our AWS, Google, and Microsoft certified engineers can help you create a product that matters. </p>
+                                                              </li>
+                                                            </div>
+                                                            <div class="card-footer">
+                                                              <a href="https://enestit.com/" target="_blank">You can click here to visit the official site of this company</a>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                        <div class="container">
+                                                          <div class="row">
+                                                            <div class="col-lg-3 col-md-6 col-12">
+                                                              <div class="card text-center">
+                                                                  <div class="card-header"><img src="{% static 'TPO_App/images/trantor.png' %}" alt=""  style="width: 50%;"><h4><b>TRANTOR SOFTWARE PVT.LTD,CHANDIGARH</b></h4></div>
+                                                                  <div class="card-body">
+                                                                    <li>
+                                                                      <p>Trantor is a pioneer in creating enterprise technology solutions and state-of-the-art Captive Centers of Excellence (CoE) assisting enterprises across the globe with their digital transformations and business needs. Our commitment to excellence and authenticity has led to long-term working relationships with our clients and solution partners.</p>
+                                                                    </li>
+                                                                  </div>
+                                                                  <div class="card-footer">
+                                                                    <a href="https://www.trantorinc.com/" target="_blank">You can click here to visit the official site of this company</a>
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                              <div class="col-lg-3 col-md-6 col-12">
+                                                                <div class="card text-center">
+                                                                    <div class="card-header"><img src="{% static 'TPO_App/images/clicklabs.png' %}" alt=""  style="width: 50%;"><h4><b>CLICK LABS PVT.LTD,PANCHKULA</b></h4></div>
+                                                                    <div class="card-body">
+                                                                      <li>
+                                                                        <p>Founded in 2011, ClickLabs is a SaaS technology service provider catering to entrepreneurs and SMBs with its head offices located in India, the UK, USA, and Singapore. It is one of the prominent players in on-demand economy space, providing iOS and Android-based applications.</p>
+                                                                      </li>
+                                                                    </div>
+                                                                    <div class="card-footer">
+                                                                      <a href="https://click-labs.com/" target="_blank">You can click here to visit the official site of this company</a>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                                <div class="col-lg-3 col-md-6 col-12">
+                                                                  <div class="card text-center">
+                                                                      <div class="card-header"><img src="{% static 'TPO_App/images/libsys.png' %}" alt=""  style="width: 50%;"><h4><b>LIBSYS LIMITED,GURGAON</b></h4></div>
+                                                                      <div class="card-body">
+                                                                        <li>
+                                                                          <p>LIBSYS Ltd, a Delhi NCR based software company, is engaged in providing software solutions since 1984. Continuous growth for over 2 decades, has made LIBSYS the most trusted brand for libraries in India. We take pride in being the pioneer and market leader for library automation in India.The company has its headquarters in Gurgaon and extends its reach nationwide with regional commercial offices in Kolkata and Bangalore.</p>
+                                                                        </li>
+                                                                      </div>
+                                                                      <div class="card-footer">
+                                                                        <a href="https://www.libsys.co.in/" target="_blank">You can click here to visit the official site of this company</a>
+                                                                      </div>
+                                                                    </div>
+                                                                  </div>
+                                                                  <div class="col-lg-3 col-md-6 col-12">
+                                                                    <div class="card text-center">
+                                                                        <div class="card-header"><img src="{% static 'TPO_App/images/percept.jpg' %}" alt=""  style="width: 50%;"><h4><b>PERCEPT SOFTWARE SYSTEMS,MOHALI</b></h4></div>
+                                                                        <div class="card-body">
+                                                                          <li>
+                                                                            <p>Since last 6 years we are delivering a quality work. Below are the few achievements we achieve so far. We served WBS – for 5 years to build their Product with SAGE Line 50. We are performing consistently TOP rated firm on Upwork since last couple of years. We served Universal Aviation to build their Product FSS- Flight Scheduling Software.</p>
+                                                                          </li>
+                                                                        </div>
+                                                                        <div class="card-footer">
+                                                                          <a href="https://perceptsystems.com/" target="_blank">You can click here to visit the official site of this company</a>
+                                                                        </div>
+                                                                      </div>
+                                                                    </div>
+                                                                    <div class="container">
+                                                                      <div class="row">
+                                                                        <div class="col-lg-3 col-md-6 col-12">
+                                                                          <div class="card text-center">
+                                                                              <div class="card-header"><img src="{% static 'TPO_App/images/appventurez.png' %}" alt=""  style="width: 50%;"><h4><b>APPVENTUREZ MOBITECH,NOIDA</b></h4></div>
+                                                                              <div class="card-body">
+                                                                                <li>
+                                                                                  <p>Our expertise includes iOS app development, Android app development, and cross-platform app development. We also provide concept art, UI/UX Design, QA Testing, scalable deployment, blockchain solutions, and project management.We have refined our ways of delivering processes and products to clients according to their needs. </p>
+                                                                                </li>
+                                                                              </div>
+                                                                              <div class="card-footer">
+                                                                                <a href="https://www.appventurez.com/" target="_blank">You can click here to visit the official site of this company</a>
+                                                                              </div>
+                                                                            </div>
+                                                                          </div>
+                                                                          <div class="col-lg-3 col-md-6 col-12">
+                                                                            <div class="card text-center">
+                                                                                <div class="card-header"><img src="{% static 'TPO_App/images/infosys.jpg' %}" alt=""  style="width: 50%;"><h4><b>INFOSYS LTD,BENGALURU</b></h4></div>
+                                                                                <div class="card-body">
+                                                                                  <li>
+                                                                                    <p>Infosys is a global leader in next-generation digital services and consulting. We enable clients in more than 50 countries to navigate their digital transformation.With nearly four decades of experience in managing the systems and workings of global enterprises, we expertly steer our clients through their digital journey.We do it by enabling the enterprise with an AI-powered core that helps prioritize the execution of change.</p>
+                                                                                  </li>
+                                                                                </div>
+                                                                                <div class="card-footer">
+                                                                                  <a href="https://www.infosys.com/" target="_blank">You can click here to visit the official site of this company</a>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                            <div class="col-lg-3 col-md-6 col-12">
+                                                                              <div class="card text-center">
+                                                                                  <div class="card-header"><img src="{% static 'TPO_App/images/lrnr.jpg' %}" alt=""  style="width: 50%;"><h4><b>LRNR GLOBAL INFOTECH PVT.LTD,BENGALURU</b></h4></div>
+                                                                                  <div class="card-body">
+                                                                                    <li>
+                                                                                      <p>Lrnr Global Infotech Private Limited is a Private incorporated on 10 May 2013. It is classified as Non-govt company and is registered at Registrar of Companies, Bangalore. Its authorized share capital is Rs. 8,500,000 and its paid up capital is Rs. 5,359,000. It is inolved in Software publishing, consultancy and supply [Software publishing includes production.</p>
+                                                                                    </li>
+                                                                                  </div>
+                                                                                  <div class="card-footer">
+                                                                                    <a href="https://www.lrnr.us/contact-us/" target="_blank">You can click here to visit the official site of this company</a>
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div>
+                                                                              <div class="col-lg-3 col-md-6 col-12">
+                                                                                <div class="card text-center">
+                                                                                    <div class="card-header"><img src="{% static 'TPO_App/images/manras.png' %}" alt=""  style="width: 50%;"><h4><b>MANRAS TECHNOLOGIES,ZIRAKPUR</b></h4></div>
+                                                                                    <div class="card-body">
+                                                                                      <li>
+                                                                                        <p>Manras Technologies enables you to maximize your investment in Salesforce by providing you access to a team of certified and experienced consultants and engineers who are available round the clock to troubleshoot all your glitches as soon as they arise. Based out of Zirakpur and Gurugram, Manras is a Gold Salesforce Consulting Partner.</p>
+                                                                                      </li>
+                                                                                    </div>
+                                                                                    <div class="card-footer">
+                                                                                      <a href="https://www.manras.com/" target="_blank">You can click here to visit the official site of this company</a>
+                                                                                    </div>
+                                                                                  </div>
+                                                                                </div>
+                                                                                <div class="container">
+                                                                                  <div class="row">
+                                                                                    <div class="col-lg-3 col-md-6 col-12">
+                                                                                      <div class="card text-center">
+                                                                                          <div class="card-header"><img src="{% static 'TPO_App/images/hashedin.jpg' %}" alt=""  style="width: 50%;"><h4><b>HASHEDIN TECHNOLOGIES PVT.LTD,BENGALURU</b></h4></div>
+                                                                                          <div class="card-body">
+                                                                                            <li>
+                                                                                              <p>A software development company, with a difference. We build deep tech SAAS products and platforms. Our experts in Analytics, Machine Learning & Integrations, build upon learnings and frameworks from a decade of launching 225+ products. We understand the process, passion and hard work it takes to launch and support a growing product.</p>
+                                                                                            </li>
+                                                                                          </div>
+                                                                                          <div class="card-footer">
+                                                                                            <a href="https://hashedin.com/" target="_blank">You can click here to visit the official site of this company</a>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                      <div class="col-lg-3 col-md-6 col-12">
+                                                                                        <div class="card text-center">
+                                                                                            <div class="card-header"><img src="{% static 'TPO_App/images/apptunix.jpg' %}" alt=""  style="width: 50%;"><h4><b>APPTUNIX,MOHALI</b></h4></div>
+                                                                                            <div class="card-body">
+                                                                                              <li>
+                                                                                                <p>Since the company’s inception,we’ve had an affair with creativity which compels us to strive harder! With countless positive reviews from our clients, we’ve already made our mark as top mobile app Development Company in USA, UK and India. The key to our success is dedication and responsibility to deliver world-class mobile apps. </p>
+                                                                                              </li>
+                                                                                            </div>
+                                                                                            <div class="card-footer">
+                                                                                              <a href="https://www.apptunix.com/" target="_blank">You can click here to visit the official site of this company</a>
+                                                                                            </div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                        <div class="col-lg-3 col-md-6 col-12">
+                                                                                          <div class="card text-center">
+                                                                                              <div class="card-header"><img src="{% static 'TPO_App/images/mphrx.jpg' %}" alt=""  style="width: 50%;"><h4><b>MY PERSONAL HEALTH RECORD EXPRESS(INDIA)PVT.LTD.(MPHRX),GURUGRAM</b></h4></div>
+                                                                                              <div class="card-body">
+                                                                                                <li>
+                                                                                                  <p>mphrX is an innovation partner for organizations pioneering the next generation of healthcare. We have engineered an FHIR-based, vendor-neutral innovation platform, Minerva.</p>
+                                                                                                </li>
+                                                                                              </div>
+                                                                                              <div class="card-footer">
+                                                                                                <a href="https://www.mphrx.com/" target="_blank">You can click here to visit the official site of this company</a>
+                                                                                              </div>
+                                                                                            </div>
+                                                                                          </div>
+                                                                                          <div class="col-lg-3 col-md-6 col-12">
+                                                                                            <div class="card text-center">
+                                                                                                <div class="card-header"><img src="{% static 'TPO_App/images/aspirefox.png' %}" alt=""  style="width: 50%;"><h4><b>ASPIREFOX,MOHALI</b></h4></div>
+                                                                                                <div class="card-body">
+                                                                                                  <li>
+                                                                                                    <p>AspireFox  is an IT services company offering Web and Mobile application development solutionsWe started our journey in 2013 with strong technical competencies and outstanding potential.AspireFox is an IT services company offering Web and Mobile application development solutions. We amalgamate innovation, ideas, and creativity with functional superiority to help your business.</p>
+                                                                                                  </li>
+                                                                                                </div>
+                                                                                                <div class="card-footer">
+                                                                                                  <a href="https://aspirefox.com/" target="_blank">You can click here to visit the official site of this company</a>
+                                                                                                </div>
+                                                                                              </div>
+                                                                                            </div>
+                                                                                            <div class="container">
+                                                                                              <div class="row">
+                                                                                                <div class="col-lg-3 col-md-6 col-12">
+                                                                                                  <div class="card text-center">
+                                                                                                      <div class="card-header"><img src="{% static 'TPO_App/images/hcode.png' %}" alt=""  style="width: 50%;"><h4><b>HCODE TECHNOLOGIES PVT.LTD,KARNAL</b></h4></div>
+                                                                                                      <div class="card-body">
+                                                                                                        <li>
+                                                                                                          <p>We are a small team of experienced Software and Machine Learning engineers who have shipped code for startups in San Francisco, New York, Florida, London, Bengaluru, Delhi, as well as big corporates and govt. bodies such as Goldman Sachs and Indian Railways (Gov. of India).We work in Python, Django, React Native / JS, Android, iOS, HTML5, JQuery, Ajax, javascript, MySQL, PostgreSQL, Java etc.</p>
+                                                                                                        </li>
+                                                                                                      </div>
+                                                                                                      <div class="card-footer">
+                                                                                                        <a href="https://www.hcode.tech/" target="_blank">You can click here to visit the official site of this company</a>
+                                                                                                      </div>
+                                                                                                    </div>
+                                                                                                  </div>
+                                                                                                  <div class="col-lg-3 col-md-6 col-12">
+                                                                                                    <div class="card text-center">
+                                                                                                        <div class="card-header"><img src="{% static 'TPO_App/images/fruition.png.crdownload' %}" alt=""  style="width: 50%;"><h4><b>FRUITION,NOIDA</b></h4></div>
+                                                                                                        <div class="card-body">
+                                                                                                          <li>
+                                                                                                            <p>Fruition's digital marketing team, SEO experts, engineers and developers give you a competitive advantage online. Our digital strategy and technical execution help you improve your ROI. Augmented by proprietary in-house software, Fruition excels working with middle market companies that need the strongest digital marketing partner paired with technical website development capabilities.</p>
+                                                                                                          </li>
+                                                                                                        </div>
+                                                                                                        <div class="card-footer">
+                                                                                                          <a href="https://fruition.net/" target="_blank">You can click here to visit the official site of this company</a>
+                                                                                                        </div>
+                                                                                                      </div>
+                                                                                                    </div>
+                                                                                                    <div class="col-lg-3 col-md-6 col-12">
+                                                                                                      <div class="card text-center">
+                                                                                                          <div class="card-header"><img src="{% static 'TPO_App/images/ldt.jpg' %}" alt=""  style="width: 50%;"><h4><b>LDT TECHNOLOGY,ZIRAKPUR</b></h4></div>
+                                                                                                          <div class="card-body">
+                                                                                                            <li>
+                                                                                                              <p>We at LDT Technology provide #MobileDevelopment, #WebDevelopment, #BackendAPIDevelopment #TestingServices #DeploymentSupport and #DigitalMarketing services to our clients worldwide. We embrace the latest technologies to deliver solutions to our clien’ companies and business. We take care of the complex technical aspects for our clients thereby enabling them to focus on their core business strengths.</p>
+                                                                                                            </li>
+                                                                                                          </div>
+                                                                                                          <div class="card-footer">
+                                                                                                            <a href="http://www.ldttechnology.com/" target="_blank">You can click here to visit the official site of this company</a>
+                                                                                                          </div>
+                                                                                                        </div>
+                                                                                                      </div>
+                                                                                                      <div class="col-lg-3 col-md-6 col-12">
+                                                                                                        <div class="card text-center">
+                                                                                                            <div class="card-header"><img src="{% static 'TPO_App/images/dynamicmonk.jpg' %}" alt=""  style="width: 50%;"><h4><b>DYNAMICS MONK,NEW DELHI</b></h4></div>
+                                                                                                            <div class="card-body">
+                                                                                                              <li>
+                                                                                                                <p>Coming from a middle class business family, and working in corporates in what now seems like zillions of years, our founders always had the urge of taking thier tech learnings, wrapped up in middle class core values of trust and honesty to the market.We Dmonks started as independent freelancers, which soon turned into project contractors and now we have started as full stack service providers. We are proud in what we do and have build ourselves on a trailblazing path of hard work and success.</p>
+                                                                                                              </li>
+                                                                                                            </div>
+                                                                                                            <div class="card-footer">
+                                                                                                              <a href="https://dynamicsmonk.com/" target="_blank">You can click here to visit the official site of this company</a>
+                                                                                                            </div>
+                                                                                                          </div>
+                                                                                                        </div>
+                                                                                                        <div class="container">
+                                                                                                          <div class="row">
+                                                                                                            <div class="col-lg-3 col-md-6 col-12">
+                                                                                                              <div class="card text-center">
+                                                                                                                  <div class="card-header"><img src="{% static 'TPO_App/images/motherson.png' %}" alt=""  style="width: 50%;"><h4><b>MOTHERSONSUMI INFOTECH & DESIGNS LTD,NOIDA</b></h4></div>
+                                                                                                                  <div class="card-body">
+                                                                                                                    <li>
+                                                                                                                      <p>Mothersonsumi INfotech and Designs Ltd. (MIND) is a digital transformation company specialized in helping businesses utilise data, analytics, IoT, and other cloud-based applications to transform their approach to compete in the fourth industrial revolution. Over the last 20 years, MIND, an SEI CMMI Level 5 company, has partnered with over 200 customers in 47+ global locations across all continents.</p>
+                                                                                                                    </li>
+                                                                                                                  </div>
+                                                                                                                  <div class="card-footer">
+                                                                                                                    <a href="https://www.mind-infotech.com/" target="_blank">You can click here to visit the official site of this company</a>
+                                                                                                                  </div>
+                                                                                                                </div>
+                                                                                                              </div>
+                                                                                                              <div class="col-lg-3 col-md-6 col-12">
+                                                                                                                <div class="card text-center">
+                                                                                                                    <div class="card-header"><img src="{% static 'TPO_App/images/centilytics.png' %}" alt=""  style="width: 50%;"><h4><b>CENTILYTICS,NOIDA</b></h4></div>
+                                                                                                                    <div class="card-body">
+                                                                                                                      <li>
+                                                                                                                        <p>Centilytics, an Intelligent cloud management platform, serves as a governance, security & optimization tool to save unnecessary cloud spend with 360-degree visibility. It pinpoints loopholes in the cloud infrastructure to put the resources into optimum utilization and check the entire infrastructure for threats and malicious attacks.</p>
+                                                                                                                      </li>
+                                                                                                                    </div>
+                                                                                                                    <div class="card-footer">
+                                                                                                                      <a href="https://www.centilytics.com/" target="_blank">You can click here to visit the official site of this company</a>
+                                                                                                                    </div>
+                                                                                                                  </div>
+                                                                                                                </div>
+                                                                                                                <div class="col-lg-3 col-md-6 col-12">
+                                                                                                                  <div class="card text-center">
+                                                                                                                      <div class="card-header"><img src="{% static 'TPO_App/images/rightwave.png' %}" alt=""  style="width: 50%;"><h4><b>RIGHTWAVE INFOSOLUTIONS PVT.LTD,NOIDA</b></h4></div>
+                                                                                                                      <div class="card-body">
+                                                                                                                        <li>
+                                                                                                                          <p>RightWave’s Marketing Automation as a Service™ (MaaS) provides B2B companies the ability to have successful marketing automation adoption without traditional lengthy and complex implementations, time-consuming hiring and training of marketing operations personnel and added consulting costs.The RightWave model is straight forward with an all-inclusive fast and easy implementation that provides positive return on investment from the very first month of adoption.</p>
+                                                                                                                        </li>
+                                                                                                                      </div>
+                                                                                                                      <div class="card-footer">
+                                                                                                                        <a href="https://www.rightwave.com/" target="_blank">You can click here to visit the official site of this company</a>
+                                                                                                                      </div>
+                                                                                                                    </div>
+                                                                                                                  </div>
+                                                                                                                  <div class="col-lg-3 col-md-6 col-12">
+                                                                                                                    <div class="card text-center">
+                                                                                                                        <div class="card-header"><img src="{% static 'TPO_App/images/oati.png' %}" alt=""  style="width: 50%;"><h4><b>OPEN ACCESS TECHNOLOGY NOIDA(OATI),MOHALI</b></h4></div>
+                                                                                                                        <div class="card-body">
+                                                                                                                          <li>
+                                                                                                                            <p>At Open Access Technology International, Inc. (OATI), your career is always on the move. Our employees have expertise across diverse verticals and technology platforms. OATI combines the agility of a small company with the stability of a large company. We have built a nurturing and rewarding culture diligently over the last 20 years. Our work culture is collaborative and we encourage every team member to go beyond their defined roles and learn more.</p>
+                                                                                                                          </li>
+                                                                                                                        </div>
+                                                                                                                        <div class="card-footer">
+                                                                                                                          <a href="https://www.oati.com/" target="_blank">You can click here to visit the official site of this company</a>
+                                                                                                                        </div>
+                                                                                                                      </div>
+                                                                                                                    </div>
+
+                   </div>
+       </div>
+      </div>
+    <!-- </div> -->
+                                                                                            </div>
+                                                                                  </div>
+                                                                                </div>
+                                                                      </div>
+                                                                    </div>
+                                                          </div>
+                                                        </div>
+                                              </div>
+                                            </div>
+                                  </div>
+                                </div>
+                      </div>
+                    </div>
+          </div>
+        </div>
+    </section>
+</body>
+</html>
